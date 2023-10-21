@@ -1,0 +1,17 @@
+.table-container {
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 100px 200px 0; /* Agrega margen a cada lado */
+  max-width: 100%; /* Ajusta el ancho máximo */
+}
+
+/* Ajusta el ancho máximo de la tabla si es necesario */
+.p-table {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 50px; /* Tamaño de fuente deseado, puedes ajustarlo según tus preferencias */
+  text-align: center;
+  font-weight: bold; /* Peso de fuente, opcional */
+  color: #333; /* Color de texto, opcional */
+}

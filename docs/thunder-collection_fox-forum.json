@@ -1,0 +1,114 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "fox-forum",
+    "dateExported": "2023-10-14T17:49:23.905Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d098fe51-b444-477d-924e-c39b6a701ad5",
+            "colId": "2d08441d-52b7-48a3-a1a9-c6a603f43980",
+            "containerId": "",
+            "name": "http://localhost:8083/user/1",
+            "url": "http://localhost:8083/user/1",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-14T11:11:10.828Z",
+            "modified": "2023-10-14T17:21:22.241Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6cf1b200-3284-4cba-8fc0-79affd3389a4",
+            "colId": "2d08441d-52b7-48a3-a1a9-c6a603f43980",
+            "containerId": "",
+            "name": "http://localhost:8083/user",
+            "url": "http://localhost:8083/user",
+            "method": "POST",
+            "sortNum": 12500,
+            "created": "2023-10-14T11:11:10.829Z",
+            "modified": "2023-10-14T17:26:01.837Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 2,\n  \"name\": \"Pedro\",\n  \"surname\": \"null\",\n  \"lastname\": \"Petroba\",\n  \"email\": \"petro@ausias.com\",\n  \"username\": \"mpetro\",\n  \"role\": false\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "587b513e-2290-4b10-abd2-ab6f15f9ecbf",
+            "colId": "2d08441d-52b7-48a3-a1a9-c6a603f43980",
+            "containerId": "",
+            "name": "http://localhost:8083/user",
+            "url": "http://localhost:8083/user",
+            "method": "PUT",
+            "sortNum": 12812.5,
+            "created": "2023-10-14T11:11:10.830Z",
+            "modified": "2023-10-14T14:18:46.118Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 1383,\n  \"name\": \"Zulema\",\n  \"surname\": \"Perez\",\n  \"lastname\": \"Salea\",\n  \"email\": \"juanin@ausiasmarch.net\",\n  \"username\": \"Zull\",\n  \"role\": false\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d3f2866-411f-4e3d-936a-2c115221028a",
+            "colId": "2d08441d-52b7-48a3-a1a9-c6a603f43980",
+            "containerId": "",
+            "name": "http://localhost:8083/user/2",
+            "url": "http://localhost:8083/user/1419",
+            "method": "DELETE",
+            "sortNum": 13125,
+            "created": "2023-10-14T11:11:10.831Z",
+            "modified": "2023-10-14T17:20:17.945Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b480f3c0-e90a-46d0-a52c-7e4e4be6a571",
+            "colId": "2d08441d-52b7-48a3-a1a9-c6a603f43980",
+            "containerId": "",
+            "name": "http://localhost:8083/user",
+            "url": "http://localhost:8083/user?page=1&size=2",
+            "method": "GET",
+            "sortNum": 19375,
+            "created": "2023-10-14T11:11:10.833Z",
+            "modified": "2023-10-14T11:33:22.431Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "size",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "dc2d5efd-c505-42dc-898f-9ae7b93db582",
+            "colId": "2d08441d-52b7-48a3-a1a9-c6a603f43980",
+            "containerId": "",
+            "name": "http://localhost:8083/user/populate/5",
+            "url": "http://localhost:8083/user/populate/2",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-10-14T11:11:10.832Z",
+            "modified": "2023-10-14T11:34:12.502Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

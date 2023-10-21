@@ -1,0 +1,114 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "fox-forum-reply",
+    "dateExported": "2023-10-14T17:50:03.114Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0ce23482-26e3-45c3-8a13-b3edf4599d43",
+            "colId": "9ad1a5c7-e1b5-43ad-b3fc-87fad404c445",
+            "containerId": "",
+            "name": "http://localhost:8083/reply/1",
+            "url": "http://localhost:8083/reply/1",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-14T11:30:33.600Z",
+            "modified": "2023-10-14T14:37:31.402Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a6fec79b-973e-4b2d-8dd2-858b30b34a39",
+            "colId": "9ad1a5c7-e1b5-43ad-b3fc-87fad404c445",
+            "containerId": "",
+            "name": "http://localhost:8083/reply",
+            "url": "http://localhost:8083/reply",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-14T11:30:33.601Z",
+            "modified": "2023-10-14T16:16:00.461Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 2,\n  \"title\": \"Título\",\n  \"body\": \"Texto corto\",\n  \"user\": { \n    \"id\": 1\n  }, \n  \"thread\": { \n    \"id\":1\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5e7f193a-e600-437d-a2a3-c7b3524d41c7",
+            "colId": "9ad1a5c7-e1b5-43ad-b3fc-87fad404c445",
+            "containerId": "",
+            "name": "http://localhost:8083/reply",
+            "url": "http://localhost:8083/reply",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-10-14T11:30:33.602Z",
+            "modified": "2023-10-14T11:30:33.602Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 8,\n  \"title\": \"Nuevo título de respuesta\",\n  \"body\": \"Nuevo cuerpo de respuesta\",\n  \"userId\": 3,\n  \"threadId\": 3 \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "69fac6d1-a1c7-43e9-bd5c-4bf849feeddf",
+            "colId": "9ad1a5c7-e1b5-43ad-b3fc-87fad404c445",
+            "containerId": "",
+            "name": "Borrar reply según id",
+            "url": "http://localhost:8083/reply/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-14T11:30:33.603Z",
+            "modified": "2023-10-14T11:44:27.057Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "42056379-7529-49c7-80d6-5a3a178154b8",
+            "colId": "9ad1a5c7-e1b5-43ad-b3fc-87fad404c445",
+            "containerId": "",
+            "name": "Mostrar filas por página",
+            "url": "http://localhost:8083/reply?page=1&size=2",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-14T11:30:33.604Z",
+            "modified": "2023-10-14T11:30:33.604Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "size",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "5bb18e54-3f6b-4dcb-9929-ed9391892fe9",
+            "colId": "9ad1a5c7-e1b5-43ad-b3fc-87fad404c445",
+            "containerId": "",
+            "name": "Crea filas",
+            "url": "http://localhost:8083/reply/populate/8",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-10-14T11:30:33.605Z",
+            "modified": "2023-10-14T12:40:00.521Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

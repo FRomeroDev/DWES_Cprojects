@@ -1,0 +1,12 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Establece la altura del contenedor para ocupar toda la altura de la pantalla */
+}
+.card {
+  width: 300px; /* Ancho deseado del card */
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+}

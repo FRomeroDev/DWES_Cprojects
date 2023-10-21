@@ -1,0 +1,40 @@
+<h2 *ngIf="status!=null">ERROR: {{status.message}}</h2>
+<div *ngIf="status==null">
+
+
+  <div class="card">
+    <div class="table-container">
+      <h2>Replies</h2>
+      <h3>Showing {{oPage.numberOfElements}} of total {{oPage.totalElements}} replies.</h3>
+      <p-table [value]="oPage.content" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th>ID</th>
+            <th (click)="doOrder('title')">Title</th>
+            <th (click)="doOrder('body')">Body</th>
+            <th (click)="doOrder('id_user')">User</th>
+            <th (click)="doOrder('id_thread')">Thread</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-r>
+          <tr>
+            <td>{{r.id}}</td>
+            <td>{{r.title}}</td>
+            <td>{{r.body}}</td>
+            <td>
+              <a [routerLink]="['/admin','user','view', r.user.id]">{{r.user.name}} {{r.user.surname}}</a>
+            </td>
+            <td>
+              <a [routerLink]="['/admin','thread','view', r.thread.id]">{{r.thread.title}}</a>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+  <br>
+  <div class="card flex justify-content-center">
+    <p-paginator (onPageChange)="onPageChang($event)" [first]="oPaginatorState.first!" [rows]="oPaginatorState.rows!"
+      [totalRecords]="oPage.totalElements" [rowsPerPageOptions]="[10, 20, 30]"></p-paginator>
+  </div>
+</div>

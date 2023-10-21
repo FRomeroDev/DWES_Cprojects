@@ -1,0 +1,114 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "fox-forum-thread",
+    "dateExported": "2023-10-14T17:49:40.870Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1859a286-47e2-4dac-a710-504bb4defb05",
+            "colId": "7ff59444-c7ef-4158-be41-408cbc520245",
+            "containerId": "",
+            "name": "Mostrar thread por id url",
+            "url": "http://localhost:8083/thread/1",
+            "method": "GET",
+            "sortNum": 7500,
+            "created": "2023-10-14T11:30:17.514Z",
+            "modified": "2023-10-14T14:37:01.896Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "76b8ff90-654e-4c7f-9560-f9c15611be83",
+            "colId": "7ff59444-c7ef-4158-be41-408cbc520245",
+            "containerId": "",
+            "name": "Crear thread id json",
+            "url": "http://localhost:8083/thread",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-14T11:30:17.513Z",
+            "modified": "2023-10-14T17:37:01.183Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Titulo aleatorio\",\n  \"user\": {\n    \"id\": 1383\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2d662a13-e556-4498-a948-78282ecf5f80",
+            "colId": "7ff59444-c7ef-4158-be41-408cbc520245",
+            "containerId": "",
+            "name": "Actualizar thread por id json",
+            "url": "http://localhost:8083/thread",
+            "method": "PUT",
+            "sortNum": 17500,
+            "created": "2023-10-14T11:30:17.516Z",
+            "modified": "2023-10-14T11:43:34.599Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 2,\n  \"title\": \"Actualizacion de thread user 1385\",\n  \"user\": {\n    \"id\": 1385\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "500241c3-d08b-42b4-b6f5-c4da2482a199",
+            "colId": "7ff59444-c7ef-4158-be41-408cbc520245",
+            "containerId": "",
+            "name": "Borrar por id url",
+            "url": "http://localhost:8083/thread/16",
+            "method": "DELETE",
+            "sortNum": 25000,
+            "created": "2023-10-14T11:30:17.515Z",
+            "modified": "2023-10-14T11:30:17.515Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6d6f55c9-7e41-4640-8620-dca7d830ec95",
+            "colId": "7ff59444-c7ef-4158-be41-408cbc520245",
+            "containerId": "",
+            "name": "Mostrar filas por página",
+            "url": "http://localhost:8083/thread?page=1&size=1",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2023-10-14T11:30:17.517Z",
+            "modified": "2023-10-14T11:30:17.517Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "size",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "61953afb-385a-4cfb-a59b-5ca6d52284f9",
+            "colId": "7ff59444-c7ef-4158-be41-408cbc520245",
+            "containerId": "",
+            "name": "Crea filas",
+            "url": "http://localhost:8083/thread/populate/3",
+            "method": "POST",
+            "sortNum": 45000,
+            "created": "2023-10-14T11:30:17.518Z",
+            "modified": "2023-10-14T11:30:17.518Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
